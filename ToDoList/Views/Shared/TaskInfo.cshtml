@@ -1,0 +1,28 @@
+﻿@using System.Web.Mvc.Html
+@model ToDoList.Models.Task
+
+<div class="single-task task-title">
+    <h2 class="task-title">
+        @Model.Title
+    </h2>
+
+    <div class="task-image">
+        <img alt="Task Image" src="@Model.ImageUrl" />
+    </div>
+
+    <p class="task-description">
+        @Model.Description
+    </p>
+
+    <div class="row">
+        <div class="col-md-4">
+            @Html.ActionLink("Edit","Update","Task",new {id=Model.Id},new {@class="btn btn-default btn-block"})
+        </div>
+        <div class="col-md-4">
+            @Html.ActionLink("More info...", "Read", "Task", new { id = Model.Id }, new { @class = "btn btn-default btn-block btn-info" })
+        </div>
+        <div class="col-md-4">
+            @Html.ActionLink(" ", "Delete", "Task", new { id = Model.Id }, new { @class = "btn btn-default btn-block btn-danger glyphicon glyphicon-remove" })
+        </div>
+</div>
+</div>

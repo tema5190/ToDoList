@@ -1,24 +1,26 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
+﻿.task-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px; }
 
-/* Set padding to keep content from hitting the edges */
+.single-task .task-title {
+  text-align: center;
+  margin: 10px; }
+
+.single-task .task-image {
+  text-align: center; }
+
+.single-task .task-description {
+  margin-top: 20px; }
+
+.add-task-button {
+  margin: 30px; }
+
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+  margin-top: 50px; }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
+.page-name {
+  text-align: center; }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
