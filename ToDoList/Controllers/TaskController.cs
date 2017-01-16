@@ -16,13 +16,11 @@ namespace ToDoList.Controllers
 
         #region Create
         [HttpGet]
-        [Route("~/Create")]
         public ActionResult Create()
         {
             return View("Create");
         }
 
-        [Route("~/Create")]
         [HttpPost]
         public ActionResult Create(Task task)
         {
@@ -32,15 +30,15 @@ namespace ToDoList.Controllers
         #endregion
 
         #region Read
-        [Route("~/Detail")]
         public ActionResult Index()
         {
+            ViewBag.Desc = false;
             return View(_provider.GetAll());
         }
 
-        [Route("~/Detail/{id}")]
         public ActionResult Read(int id)
         {
+            ViewBag.Desc = true;
             Task task;
             try
             {
@@ -58,7 +56,6 @@ namespace ToDoList.Controllers
 
 
         #region Update
-        [Route("~/Edit/{id}")]
         [HttpGet]
         public ActionResult Update(int id)
         {
@@ -75,7 +72,6 @@ namespace ToDoList.Controllers
         }
 
         [HttpPost]
-        [Route("~/Edit/{id}")]
         public ActionResult Update(int id, Task task)
         {
             _provider.Update(id,task);
@@ -84,7 +80,6 @@ namespace ToDoList.Controllers
         #endregion
 
         #region Delete
-        [Route("~/Delete/{id}")]
         public ActionResult Delete(int id)
         {
             try

@@ -13,12 +13,15 @@ namespace ToDoList
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapMvcAttributeRoutes();
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Task", action = "Index", id = UrlParameter.Optional }
+                defaults: new
+                {
+                    controller = "Task",
+                    action = "Index",
+                    id = UrlParameter.Optional
+                }
             );
         }
     }

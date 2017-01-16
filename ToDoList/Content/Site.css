@@ -1,13 +1,14 @@
-﻿.task-info-container {
+﻿.mynavbar {
+  margin-bottom: 100px; }
+
+.task-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-top: 10px; }
+  align-items: center; }
 
 .single-task .task-title {
-  text-align: center;
-  margin: 10px; }
+  text-align: center; }
 
 .single-task .task-image {
   text-align: center; }
@@ -16,11 +17,5 @@
   margin-top: 20px; }
 
 .add-task-button {
-  margin: 30px; }
-
-.body-content {
-  margin-top: 50px; }
-
-.page-name {
-  text-align: center; }
+  margin-top: 100px; }
 

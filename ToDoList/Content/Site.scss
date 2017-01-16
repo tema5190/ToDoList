@@ -1,15 +1,19 @@
-﻿.task-info-container{
+﻿.mynavbar{
+    margin-bottom:100px;
+}
+
+.task-info-container{
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    padding-top:10px;
 }
 
+
 .single-task{
+    
     .task-title{
         text-align:center;
-        margin:10px;
     }
     .task-image{
         text-align:center;
@@ -21,13 +25,5 @@
 }
 
 .add-task-button{
-    margin:30px;
-}
-
-.body-content{
-    margin-top:50px;
-}
-
-.page-name{
-    text-align:center;
+    margin-top:100px;
 }

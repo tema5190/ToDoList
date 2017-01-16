@@ -203,6 +203,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\TaskApiController.cs" />
     <Compile Include="Controllers\TaskController.cs" />
     <Compile Include="Exceptions\DataBaseIsEmptyException.cs" />
     <Compile Include="Exceptions\TaskNotFoundException.cs" />
