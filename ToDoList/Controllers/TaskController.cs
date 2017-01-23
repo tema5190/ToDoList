@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Web.Mvc;
-using ToDoList.Models;
-using ToDoList.Services;
+using ModelsAndServices.Models;
+using ModelsAndServices.Services;
 
 namespace ToDoList.Controllers
 {
@@ -33,7 +33,8 @@ namespace ToDoList.Controllers
         public ActionResult Index()
         {
             ViewBag.Desc = false;
-            return View(_provider.GetAll());
+            var taskList = _provider.GetAll();
+            return View(taskList);
         }
 
         public ActionResult Read(int id)

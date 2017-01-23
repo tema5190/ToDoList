@@ -1,0 +1,36 @@
+﻿<div>
+    <section class="content task-info-container">
+        <div class="container">
+            <div class="row">
+                <a class="col-large-12 btn btn-success btn-block add-task-button">Add task</a>
+            </div>
+
+            <div class="single-task task-title jumbotron" ng-repeat="task in Tasks">
+                <div class="row">
+                    <a class="glyphicon glyphicon-remove col-md-offset-12"></a>
+                </div>
+                <h2 class="task-title">
+                    {{task.Title}}
+                </h2>
+
+                <div class="task-image">
+                    <img src="{{task.ImageUrl}}" alt="Task Image" />
+                </div>
+
+                <p class="task-description">
+                    {{task.Description}}
+
+                </p>
+
+                <div class="row">
+                    <div class="col-md">
+                        <a class="btn btn-primary btn-block" >Edit</a>
+                    </div>
+                    <div class="col-md">
+                        <a class="btn btn-default btn-block btn-info" href="#/Task/Detail/{{taskId}}">More info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

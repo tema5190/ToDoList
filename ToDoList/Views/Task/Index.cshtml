@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ToDoList.Models.Task>
+﻿@model IEnumerable<ModelsAndServices.Models.Task>
 
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,7 +10,7 @@
 </div>
 
 
-@foreach (var item in Model.Reverse())
+@foreach (var item in Model)
 {
     <div class="jumbotron task-info-container">
         @Html.Partial("TaskInfo", item);
