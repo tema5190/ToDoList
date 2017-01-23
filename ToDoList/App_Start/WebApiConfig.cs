@@ -17,7 +17,11 @@ namespace ToDoList
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new {
+                    controller ="TaskService",
+                    action = "Get",
+                    id = RouteParameter.Optional
+                }
             );
         }
     }

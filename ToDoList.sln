@@ -7,10 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelsAndServices", "DAL\ModelsAndServices.csproj", "{6F286A09-EBA5-4E30-8AA0-80C35E6B05F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskService", "TaskService\TaskService.csproj", "{4E85DF72-64C5-4F73-B66B-4D7D99E755AE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAngularClient", "TaskAngularClient\TaskAngularClient.csproj", "{F1D0FFB9-8606-4831-81FB-5F8D320770D5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{6F286A09-EBA5-4E30-8AA0-80C35E6B05F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F286A09-EBA5-4E30-8AA0-80C35E6B05F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F286A09-EBA5-4E30-8AA0-80C35E6B05F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E85DF72-64C5-4F73-B66B-4D7D99E755AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E85DF72-64C5-4F73-B66B-4D7D99E755AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E85DF72-64C5-4F73-B66B-4D7D99E755AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E85DF72-64C5-4F73-B66B-4D7D99E755AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1D0FFB9-8606-4831-81FB-5F8D320770D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1D0FFB9-8606-4831-81FB-5F8D320770D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1D0FFB9-8606-4831-81FB-5F8D320770D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1D0FFB9-8606-4831-81FB-5F8D320770D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

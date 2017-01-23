@@ -14,12 +14,11 @@
                 </h2>
 
                 <div class="task-image">
-                    <img src="{{task.ImageUrl}}" alt="Task Image" />
+                    <img ng-src={{task.ImageUrl}} alt="Task Image" />
                 </div>
 
                 <p class="task-description">
                     {{task.Description}}
-
                 </p>
 
                 <div class="row">
@@ -27,7 +26,7 @@
                         <a class="btn btn-primary btn-block" >Edit</a>
                     </div>
                     <div class="col-md">
-                        <a class="btn btn-default btn-block btn-info" href="#/Task/Detail/{{taskId}}">More info</a>
+                        <a class="btn btn-default btn-block btn-info" ng-href="#/Task/Detail/{{task.Id}}">More info</a>
                     </div>
                 </div>
             </div>

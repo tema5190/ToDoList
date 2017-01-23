@@ -1,21 +1,6 @@
-﻿.mynavbar {
-  margin-bottom: 100px; }
-
-.task-info-container {
+﻿.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.single-task .task-title {
-  text-align: center; }
-
-.single-task .task-image {
-  text-align: center; }
-
-.single-task .task-description {
-  margin-top: 20px; }
-
-.add-task-button {
-  margin-top: 100px; }
 

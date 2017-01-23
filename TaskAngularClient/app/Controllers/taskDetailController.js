@@ -1,18 +1,19 @@
-﻿(function() {
-    var taskDetailController = function($scope, $http, $routeParams) {
+﻿"use strict";
 
-        var taskId = $routeParams.id;
+var app = angular.module("taskApp");
 
-        var getTaskDetail = function() {
-            $http.get("http://localhost:53179/api/Task" + "//" + taskId)
-                .then(function(response) {
-                    $scope.taskInfo = response.data;
-                });
-        };
+app.controller("taskDetailController", function ($scope, $http, $routeParams) {
 
-        getTaskDetail();
-    };
 
-    app.controller("taskDetailController", ["$scope", "$http", "$routeParams", taskDetailController]);
+    var taskId = $routeParams.id;
 
-})
+    var getTaskDetails = function() {
+        $http.get("http://localhost:53179/api/Task/" + taskId)
+        .then(function (response)
+        {
+            $scope.taskDetail = response.data;
+        });
+
+        getTaskDetails();
+    }
+});
